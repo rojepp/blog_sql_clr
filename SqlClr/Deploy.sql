@@ -13,7 +13,7 @@ GO
 -- Now, create everything in forwards order
 CREATE ASSEMBLY FSCore FROM 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\FSharp.Core.dll' WITH PERMISSION_SET = UNSAFE
 GO
-CREATE ASSEMBLY SqlClr FROM 'D:\robert\dokument\visual studio 2010\Projects\SqlClr\SqlClr\bin\Debug\SqlClr.dll' WITH PERMISSION_SET = UNSAFE
+CREATE ASSEMBLY SqlClr FROM 'D:\robert\dokument\visual studio 2010\Projects\SqlClr\SqlClr\bin\Debug\SqlClr.dll'
 GO
 
 -- External name is [SqlAssemblyName].[Full typename].[Method name]
@@ -23,3 +23,4 @@ AS
 EXTERNAL NAME [SqlClr].[SqlClr.SqlClrSample].[Hello]
 GO
 
+exec Hello 'Roberto'
